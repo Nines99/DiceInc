@@ -6,21 +6,21 @@ var dice6 = {
       return randomNumber;
     }
   }
-  
-  //test dice6
-var result = dice6.roll();
-  console.log(result);
 
 //Prints dice roll to the page
 
 function printNumber(number) {
-  var numDisplay = document.getElementById('numDisplay');
+  var numDisplay = document.getElementById('numDisplay6die');
   numDisplay.innerHTML = number;
 }
 
-var button = document.getElementById('button');
+var button = document.getElementById('button6die');
 
 button.onclick = function() {
-  var result = dice.roll();
+  var result = dice6.roll();
   printNumber(result);
 };
+
+//test dice6
+var result = dice6.roll();
+  console.log(result);
